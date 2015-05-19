@@ -106,7 +106,7 @@ window.onload = function() {
 
       function addBox(width,height,depth) {
         // removeEntity(mesh);
-        var geometry = new THREE.BoxGeometry( width, height, depth, 2 );
+        var geometry = new THREE.BoxGeometry( width, height, depth );
 
         var texture = THREE.ImageUtils.loadTexture( 'blank.png' );
         texture.anisotropy = renderer.getMaxAnisotropy();
