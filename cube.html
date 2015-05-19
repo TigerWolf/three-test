@@ -111,7 +111,8 @@ window.onload = function() {
         var texture = THREE.ImageUtils.loadTexture( 'blank.png' );
         texture.anisotropy = renderer.getMaxAnisotropy();
 
-        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        // var material = new THREE.MeshBasicMaterial( { map: texture } );
+        var material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframeLinewidth: 5 } );
 
         mesh = new THREE.Mesh( geometry, material );
         mesh.name = "box";
